@@ -1,4 +1,4 @@
-const timeSince = (date: number): string => {
+export const timeSince = (date: number): string => {
 	const seconds = Math.floor((new Date().valueOf() - date) / 1000);
 	let interval = seconds / 3600;
 
