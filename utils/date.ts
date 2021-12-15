@@ -24,12 +24,12 @@ const timeSince = (date: number): string => {
 	);
 };
 
-export default function postDate(date: number) {
-	const seconds = Math.floor((new Date().valueOf() - date) / 1000);
-	if (seconds < 86400) return timeSince(date);
-	return (
-		date.toLocaleString("es-SV", { day: "numeric" }) +
-		" " +
-		date.toLocaleString("es-SV", { month: "short" })
-	);
-}
+// export default function postDate(date: number) {
+// 	const seconds = Math.floor((new Date().valueOf() - date) / 1000);
+// 	if (seconds < 86400) return timeSince(date);
+// 	return (
+// 		date.toLocaleString("es-SV", { day: "numeric" }) +
+// 		" " +
+// 		date.toLocaleString("es-SV", { month: "short" })
+// 	);
+// }
